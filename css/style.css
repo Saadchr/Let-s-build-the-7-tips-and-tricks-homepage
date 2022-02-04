@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;900&display=swap");
+
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  /*La différence entre min-height est si mon contenu dépasse la taille de l'écran (possible dans les petits écran, le body continue à grow et ne vient pas mess up everything*/
+  align-items: center;
+}
+
+
+.card {
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  color: #05cbe9;
+  font-size: 1.75rem;
+  font-family: Blinker, "sans-serif";
+}
+
+.card-body,
+.card-read-time,
+.card-btn {
+  font-family: "Source Sans Pro", "sans-serif";
+}
+
+.card-body {
+  font-size: 1rem;
+}
+
+.card-btn {2
+  font-size: 1.25rem;
+}
+
+/*                                                                                 
+                                                                            
+ *         __          ___   ____    ____  ______    __    __  .___________.       
+ *        |  |        /   \  \   \  /   / /  __  \  |  |  |  | |           |       
+ *        |  |       /  ^  \  \   \/   / |  |  |  | |  |  |  | `---|  |----`       
+ *        |  |      /  /_\  \  \_    _/  |  |  |  | |  |  |  |     |  |            
+ *        |  `----./  _____  \   |  |    |  `--'  | |  `--'  |     |  |            
+ *        |_______/__/     \__\  |__|     \______/   \______/      |__|            
+ *                                                                                                                                                         
+                                                    
+ */
+
+.card-img {
+  object-fit: cover;
+  flex-basis: 200px;
+  min-width: 0;
+  min-height: 0;
+ 
+}
+.card-content{
+  padding: 1em;
+  background: #111D4A;
+  color:white;
+  
+
+}
+
+.card-title{
+  margin-top: 0;
+  
+}
+
+.card-btn{
+  text-decoration: none;
+  background-color:#05cbe9;
+  padding: 0.5em 1.2em;
+  font-weight: 600;
+  color:#111D4A;
+  margin-left: 1em;
+  letter-spacing: 1px;
+  border-radius: 2px;
+}
+
+.card-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 3em;
+  
+  
+}
+.card-read-time{
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.6;
+  line-height: 1;
+
+ 
+}
+.card-read-time span{
+  font-size:1.3em;
+  display: block;
+  font-weight: 700;
+  
+}
+.card-body{
+  line-height: 1.6;
+  font-family: 'Source Sans Pro', "sans-serif";
+}
+
+
+@media (min-width:600px) {
+
+.card{
+  display: flex;
+  flex-direction: row;
+}
+.card-img{
+  min-height: 300px;
+}
+
+.card-title{
+  font-size: 2.25rem;
+}
+.card-body{
+  font-size: 1.125rem;
+  margin-top: 0;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-footer{
+  margin-top: auto;
+}
+
+.card-body{
+  max-width: 450px;
+}
+}
